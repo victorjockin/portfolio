@@ -1,0 +1,54 @@
+/* Author: Victor Jockin */
+
+/* ======================================================================================= */
+
+/* constants */
+/* --------- */
+
+:root {
+  /* sizes */
+  --profile-card-width: 400px;
+  --profile-picture-size: 170px;
+
+  /* colors */
+  --background-color-1: #d81372;
+  --background-color-2: #3d0e4a;
+  --profile-card-color: #69367f;
+  --color: #fc0c7f;
+}
+
+/* ======================================================================================= */
+
+/* html elements */
+/* ------------- */
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom right, var(--background-color-1), var(--background-color-2));
+}
+
+i {
+  color: #000;
+}
+
+/* ======================================================================================= */
+
+/* cards */
+/* ----- */
+
+.card-footer {
+  background-color: #fff;
+}
+
+/* profile picture */
+#profile-picture {
+  width: var(--profile-picture-size);
+  border-radius: 50%;
+}
+#profile-card {
+  width: var(--profile-card-width);
+  background-color: var(--profile-card-color);
+}
