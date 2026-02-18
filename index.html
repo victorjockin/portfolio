@@ -9,36 +9,279 @@
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"/>
+    <link rel="preload" href="main.js" as="script">
+    <script src="main.js" defer></script>
     <title>Victor Jockin - Portfolio</title>
   </head>
   <body>
-    <header></header>
-    <body>
-      <div id="profile-card" class="card">
-        <div>
-          <img id="profile-picture" src="res/img/profile.png">
+    <header>
+      <nav class="nav-bar">
+        <span class="logo">Victor Jockin</span>
+        <ul class="nav-links">
+          <li><a href="#profile-section">PROFIL</a></li>
+          <li><a href="#hobbies-section">CENTRES D'INTÉRÊT</a></li>
+          <li><a href="#skills-section">COMPÉTENCES</a></li>
+          <li><a href="#projects-section">RÉALISATIONS</a></li>
+          <li><a href="#work-experiences-section">EXPÉRIENCES</a></li>
+          <li><a href="#contact-section">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="profile-section" class="section">
+        <div id="profile">
+          <div id="profile-card" class="card column">
+            <div class="card-content column center-content">
+              <img id="profile-picture" src="res/img/profile.png">
+              <div id="profile-info" class="column center-content">
+                <span id="profile-name">Victor Jockin</span>
+                <hr/>
+                <span id="profile-status">ÉTUDIANT<br/>EN INFORMATIQUE</span>
+              </div>
+            </div>
+            <div id="links" class="card-footer">
+              <a href="https://www.linkedin.com/in/victor-jockin-7262052a5/"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/victorjockin/"><i class="fa-brands fa-github"></i></a>
+              <a href="#contact-section"><i class="fa-solid fa-address-book"></i></a>
+            </div>
+          </div>
+          <div id="profile-description" class="column">
+            <h1>Bienvenue</h1>
+            <a href="res/cv-victor-jockin.pdf" download class="card-button">
+              <i class="fa-solid fa-download"></i> TÉLÉCHARGER MON CV
+            </a>
+            <div class="content">
+              <p>Étudiant en troisième année de Bachelor Universitaire de Technologie en Informatique au sein de l'<a class="link" target="_blank" href="https://www.iut-blagnac.fr/fr/formations/but-informatique">IUT de Blagnac</a>, je me spécialise dans le développement logiciel et applicatif.</p>
+              <p>Passionné par la création de jeux vidéos depuis mes années de collège, je cultive un vif intérêt pour la programmation et prend un réel plaisir à développer des projets, aussi bien dans le cadre universitaire que sur mon temps libre.</p>
+            </div>
+          </div>
         </div>
-        <div id="links" class="card-footer">
-          <a href="https://www.linkedin.com/in/victor-jockin-7262052a5/"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://github.com/victorjockin/"><i class="fa-brands fa-github"></i></a>
+      </div>
+      <div id="hobbies-section" class="section">
+        <h1 class="reveal">Mes centres d'intérêt</h1>
+        <div class="hobbie reveal">
+          <div class="hobbie-description">
+            <h2>Composition et diffusion de morceaux</h2>
+            <div class="content">
+              <p>La musique est pour moi une passion qui est née par l'apprentissage de la flute traversière, instrument que je pratique encore aujourd'hui au sein d'un conservatoire depuis plus de 9 ans.</p>
+              <p>Je consacre une grande partie de mon temps libre à composer des musiques parfois destinés au projet de jeu sur lequel je travaille.</p>
+              <p>Lorsque je suis satisfait d'un morceau, je le publie sur mes réseaux et sur les plateformes d'écoutes sous le nom de Fantôme Casqué (The headphoned Ghost en anglais) afin de partager mon travail.</p>
+            </div>
+            <div class="hobbies-actions">
+              <a href="https://victorjockin.com"
+                class="card-button" target="_blank">Visiter le site du fantôme casqué <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="card hobbies-card">
+            <img class="hobbies-picture" src="res/img/hpg.png" alt="The Headphoned Ghost">
+            <div class="hobbies-links">
+              <a href="https://open.spotify.com/intl-fr/artist/58QDhpp4AhC5A9HBL4CzZI?si=gH6Ozq36R_uiTZuq9XNWYg" class="card-button" target="_blank">
+                <i class="fa-brands fa-spotify"></i> Spotify
+              </a>
+              <a href="https://soundcloud.com/victorjockin" class="card-button" target="_blank">
+                <i class="fa-brands fa-soundcloud"></i> SoundCloud
+              </a>
+              <a href="https://www.youtube.com/@victorjockin2702" class="card-button" target="_blank">
+                <i class="fa-brands fa-youtube"></i> YouTube
+              </a>
+              <a href="https://victorjockin.bandcamp.com/track/twenty-times-around-the-sun-a-song-for-a-friend-s-birthday" class="card-button" target="_blank">
+                <i class="fa-brands fa-bandcamp"></i> Bandcamp
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div>
-        <i class="fa-brands fa-java"></i>
-        <i class="fa-brands fa-python"></i>
-        <i class="fa-brands fa-angular"></i>
-        <i class="fa-brands fa-symfony"></i>
+      <div id="skills-section" class="section">
+        <h1 class="reveal">Mes compétences</h1>
+        <div id="skills">
+          <div id="develop" class="skill-card card column reveal">
+            <h2>Développer</h2>
+            <p>Concevoir, coder, tester et livrer des applications informatiques répondant aux besoins client en respectant les bonnes pratiques de qualité de code ainsi qu'en assurant leur évolution et leur maintien sur différents supports.</p>
+          </div>
+          <div id="optimize" class="skill-card card column reveal">
+            <h2>Optimiser</h2>
+            <p>Analyser et améliorer les performances des applications informatiques en choisissant les algorithmes et structures de données adaptées dans le but de contrôler leur impact sur l’environnement.</p>
+          </div>
+          <div id="collaborate" class="skill-card card column reveal">
+            <h2>Travailler en équipe</h2>
+            <p>Collaborer au sein d’une équipe informatique en communiquant, coordonnant les tâches et contribuant au projet dans le respect des contraintes techniques et organisationnelles.</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <a href=""><i class="fa-solid fa-blog"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-youtube"></i></a>
-        <a href=""><i class="fa-brands fa-soundcloud"></i></a>
-        <a href=""><i class="fa-brands fa-spotify"></i></a>
-        <a href=""><i class="fa-brands fa-bandcamp"></i></a>
+      <div id="programming-languages" class="reveal">
+        <div class="track">
+          <img id="java-logo" src="res/img/skills/java.png">
+          <img id="spring-logo" src="res/img/skills/spring.png">
+          <img id="python-logo" src="res/img/skills/python.png">
+          <img id="html-logo" src="res/img/skills/html.png">
+          <img id="css-logo" src="res/img/skills/css.png">
+          <img id="js-logo" src="res/img/skills/js.png">
+          <img id="ts-logo" src="res/img/skills/ts.svg">
+          <img id="angular-logo" src="res/img/skills/angular.svg">
+          <img id="php-logo" src="res/img/skills/php.png">
+          <img id="symfony-logo" src="res/img/skills/symfony.png">
+          <img id="c-logo" src="res/img/skills/c.png">
+        </div>
+        <div class="track">
+          <img id="java-logo" src="res/img/skills/java.png">
+          <img id="spring-logo" src="res/img/skills/spring.png">
+          <img id="python-logo" src="res/img/skills/python.png">
+          <img id="html-logo" src="res/img/skills/html.png">
+          <img id="css-logo" src="res/img/skills/css.png">
+          <img id="js-logo" src="res/img/skills/js.png">
+          <img id="ts-logo" src="res/img/skills/ts.svg">
+          <img id="angular-logo" src="res/img/skills/angular.svg">
+          <img id="php-logo" src="res/img/skills/php.png">
+          <img id="symfony-logo" src="res/img/skills/symfony.png">
+          <img id="c-logo" src="res/img/skills/c.png">
+        </div>
       </div>
-    </body>
+      <div id="projects-section" class="section">
+        <h1 class="reveal">Mes réalisations</h1>
+        <div class="card project-card reveal">
+          <img class="project-image" src="res/img/projet-raviv.png">
+          <div class="project-content">
+            <span class="tag university-project-tag">PROJET UNIVERSITAIRE</span>
+            <h2>Solution d'authentification centralisée pour l'association RAVIV</h2>
+            <p>Mise en place d’une solution d’authentification, basée sur la technologie CAS, pour unifier l’accès aux différents services numériques proposée par l’association.</p>
+            <div class="skills-used">
+              <h4>Compétences mobilisées</h4>
+              <div class="skill-tags">
+                <a href="#develop" class="skill-tag develop-tag">DÉVELOPPER</a>
+                <a href="#optimize" class="skill-tag optimize-tag">OPTIMISER</a>
+                <a href="#collaborate" class="skill-tag collaborate-tag">TRAVAILLER EN ÉQUIPE</a>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/AlbiMousse/sae-raviv-5.A.01"
+                class="card-button" target="_blank">Voir sur GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card project-card reveal">
+          <img class="project-image" src="res/img/projet-but-resto.png">
+          <div class="project-content">
+            <span class="tag university-project-tag">PROJET UNIVERSITAIRE</span>
+            <h2>ButResto - Application de gestion pour un restaurant</h2>
+            <p>ButResto est une application web développée avec Angular intégrant des fonctionnalités avancées de gestion, de suivi, de filtrage et d’accessibilité.</p>
+            <div class="skills-used">
+              <h4>Compétences mobilisées</h4>
+              <div class="skill-tags">
+                <a href="#develop" class="skill-tag develop-tag">DÉVELOPPER</a>
+                <a href="#optimize" class="skill-tag optimize-tag">OPTIMISER</a>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/victorjockin/ButResto"
+                class="card-button" target="_blank">Voir sur GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card project-card reveal">
+          <img class="project-image" src="res/img/projet-back-office.png">
+          <div class="project-content">
+            <span class="tag university-project-tag">PROJET UNIVERSITAIRE</span>
+            <h2>Back-office pour un site e-commerce</h2>
+            <p>Développement d’une interface d'administration pour le site e-commerce d'une entreprise permettant entre autre la gestion des produits, des stocks et des commandes.</p>
+            <div class="skills-used">
+              <h4>Compétences mobilisées</h4>
+              <div class="skill-tags">
+                <a href="#develop" class="skill-tag develop-tag">DÉVELOPPER</a>
+                <a href="#collaborate" class="skill-tag collaborate-tag">TRAVAILLER EN ÉQUIPE</a>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g2b12/tree/master/solution%20web/site_e-commerce/admin"
+                class="card-button" target="_blank">Voir sur GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card project-card reveal">
+          <img class="project-image" src="res/img/projet-portfolio.png">
+          <div class="project-content">
+            <span class="tag personal-project-tag">PROJET PERSONNEL</span>
+            <h2>Site portfolio professionnel</h2>
+            <p>Réalisation d'un site professionnel en HTML/CSS pur pour présenter mes compétences, réalisations et expériences.</p>
+            <div class="skills-used">
+              <h4>Compétences mobilisées</h4>
+              <div class="skill-tags">
+                <a href="#develop" class="skill-tag develop-tag">DÉVELOPPER</a>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/victorjockin/portfolio"
+                class="card-button" target="_blank">Voir sur GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="card project-card reveal">
+          <img class="project-image" src="res/img/beach.png">
+          <div class="project-content">
+            <span class="tag personal-project-tag">PROJET PERSONNEL</span>
+            <h2>Création d'un jeu vidéo narratif</h2>
+            <p>Depuis octobre 2025, je travaille au développement d’un jeu narratif en Java à l'aide de la librairie <a href="https://www.lwjgl.org/">LWJGL</a>, avec pour premier objectif la publication d’une version jouable du début de l'histoire.</p>
+            <div class="skills-used">
+              <h4>Compétences mobilisées</h4>
+              <div class="skill-tags">
+                <a href="#develop" class="skill-tag develop-tag">DÉVELOPPER</a>
+                <a href="#optimize" class="skill-tag optimize-tag">OPTIMISER</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="work-experiences-section" class="section">
+        <h1 class="reveal">Mes expériences professionnelles</h1>
+        <div class="card experience-card reveal">
+          <div class="experience-header">
+            <img class="experience-logo" src="res/img/vectory3.png" alt="Logo de Vectory3">
+            <div class="experience-meta">
+              <span class="tag professional-project-tag">STAGE</span>
+              <h2>Vectory3 — La Haye, Pays-Bas</h2>
+              <h4>Développeur Python / Blender</h4>
+              <span class="experience-date"><i class="fa-regular fa-calendar"></i> Mars 2025 — Mai 2025</span>
+              <div class="experience-actions">
+                <a href="https://corporate.vectory3.com/"
+                  class="card-button" target="_blank">Visiter le site de l'entreprise <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+          </div>
+          <hr class="experience-divider">
+          <div class="experience-description">
+            <p>Pendant deux mois, j’ai eu la chance de pouvoir travailler au sein de Vectory3, une entreprise basée à La Haye (Pays-Bas) et spécialisée dans la conception de dispositifs médicaux personnalisés basés sur les technologies 3D.</p>
+            <p>Au cours de ce stage, j'ai pu contribuer à la réalisation d'un outil médical de prise de mesure automatisé en développant un add-on Python pour le logiciel de modélisation <a href="https://www.blender.org/">Blender</a>.</p>
+          </div>
+          <div class="skills-used">
+            <h4>Compétences mobilisées</h4>
+            <div class="skill-tags">
+              <a href="#develop" class="skill-tag develop-tag">DÉVELOPPER</a>
+              <a href="#optimize" class="skill-tag optimize-tag">OPTIMISER</a>
+              <a href="#collaborate" class="skill-tag collaborate-tag">TRAVAILLER EN ÉQUIPE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact-section" class="section">
+        <h1 class="reveal">Contact</h1>
+        <div class="contact-card card reveal">
+          <form id="contact-form" action="https://formspree.io/f/xeelzowj" method="POST">
+            <div class="form-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Votre email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+            </div>
+            <button type="submit" class="card-button">ENVOYER</button>
+          </form>
+        </div>
+      </div>
+    </main>
     <footer>Copyright © Victor Jockin 2026. Tous droits réservés.</footer>
   </body>
 </html>
